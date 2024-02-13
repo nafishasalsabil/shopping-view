@@ -1,0 +1,113 @@
+nav {
+    background: #0088DD;
+    color: white;
+    border-radius: 4px;
+}
+
+.nav-container{
+    display: flex;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding: 5px;
+    margin-left: 1em;
+}
+
+.list {
+    list-style-type: none;
+    background: #0088DD;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.items {
+    margin-right: 2rem;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0088DD;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+.dropdown:hover .dropdown-arrow {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
+.dropdown.open .dropdown-arrow {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+@media screen and (max-width: 500px) {
+    .list {
+        flex-direction: column;
+        height: auto;
+    }
+    .items:nth-child(1) {
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        margin-top: 50px;
+    }
+    .items {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: center;
+        margin-right: 0px;
+        padding: 20px 0;
+    }
+}
+.title{
+    margin-left: 25px;
+}
+.hamburger-menu,
+.hamburger-menu::before,
+.hamburger-menu::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px; 
+
+}
+.hamburger-menu::before {
+    content: '';
+    margin-top: -5px;
+  }
+  
+  .hamburger-menu::after {
+    content: '';
+    margin-top: 5px;
+  }
