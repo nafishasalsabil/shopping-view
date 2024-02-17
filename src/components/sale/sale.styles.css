@@ -1,0 +1,77 @@
+.sale-parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    flex-wrap: wrap; /* Ensure flex items wrap to the next line on smaller screens */
+}
+
+.text {
+    text-align: left;
+    margin-top: 2em;
+}
+
+.prod1, .prod2, .prod3, .prod4 {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 1.2em;
+    padding: 2em;
+    width: 40vh;
+}
+
+.prod1, .prod3 {
+    background-color: #EFF9FF;
+}
+
+.prod2 {
+    background-color: #FFF8F0;
+}
+
+.prod4 {
+    background-color: #FFECF0;
+}
+
+.prod-img {
+    width: 18vh;
+    max-width: 100%; /* Ensure the image does not exceed its container width */
+    height: auto;
+}
+
+.buy-img {
+    width: 2vh;
+    height: auto;
+    margin-top: 2px;
+}
+
+.buy-class {
+    display: flex;
+}
+
+.buy-text {
+    margin-top: 4px;
+    text-decoration: underline;
+    color: #E74E4E;
+    font-size: small;
+}
+
+.sale-percent {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .prod1, .prod2, .prod3, .prod4 {
+        width: 90%; 
+        margin-bottom: 2em; 
+    }
+}
+
+@media (max-width: 576px) {
+    .prod1, .prod2, .prod3, .prod4 {
+        padding: 1em; 
+        margin-top: 0.5em;
+    }
+
+    .text {
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "message":"Gadget Store",
+        "discount":"30% Sale",
+        "buy":"Buy Now",
+        "icon":"buy.png"
+    },
+    {
+        "id":2,
+        "message":"Bundle Package",
+        "discount":"Save 30%",
+        "buy":"Se  All",
+        "icon":""
+    },   {
+        "id":3,
+        "messege":"Valentine's offer",
+        "discount":"30% Sale",
+        "buy":"Buy Now",
+        "icon":"buy.png"
+    },   {
+        "id":4,
+        "message":"Relax Chair",
+        "discount":"New Arrival",
+        "buy":"Buy Now",
+        "icon":"buy.png"
+    }
+
+]
