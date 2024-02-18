@@ -1,0 +1,180 @@
+.feature-container{
+    display: flex;
+}
+.left-options{
+    padding: 5px;
+    width: 19%;
+    margin-top: 1em;
+}
+.policy{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+.policy:hover{
+    background-color: #EFF9FF;
+    border-color: #EFF9FF;
+}
+.pol-head{
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+}
+.desc-container{
+    text-align: left;
+    padding: 0.2em;
+}
+.policy-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.policy-img{
+    width: 5vh;
+    height: auto;
+}
+.desc-span{
+    font-size: small;
+    margin-bottom: 0.2em;
+}
+.right-features{
+    width: 81%;
+    margin-left:1em ;
+}
+.feature-heading{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+.next-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowx {
+    border: solid gray;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .arrowx:hover{
+    border-color: #0088DD;
+  }
+  
+  .right {
+    margin-left: 0.7em;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+     transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .show-disc{
+   background-color: rgb(227, 71, 71);
+   color: white;
+   font-size: small;
+  }
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items from the start */
+    align-items: stretch; /* Stretch items to equal height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Needed for absolute positioning of arrows */
+    margin-top: 1em;
+}
+
+.each-product {
+    width: 24%; /* Each product occupies 25% of the container width to fit four products in a row */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    padding: 10px; /* Adjust spacing as needed */
+    transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+    display: flex; /* Make each product a flex container */
+    flex-direction: column; /* Stack child elements vertically */
+    border: 1px solid rgb(244, 244, 244);
+    border-radius: 4px;
+    margin-left: 0.5em;
+}
+.each-product:hover{
+    border-color: #0088DD;
+}
+
+.prod-img {
+    max-width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit:contain; /* Ensure the image covers the entire container */
+}
+
+
+.rating-stock {
+    display: flex;
+    justify-content: space-around;
+}
+  .stars {
+    font-size: 15px; 
+}
+
+.stars:before {
+    content: "★★★★★"; 
+    letter-spacing: 1px;
+    color: gold; 
+    margin-right: 0.6em;
+}
+
+
+.stars.rating-0:before {
+    content: "☆☆☆☆☆"; 
+}
+
+.stars.rating-1:before {
+    content: "★☆☆☆☆";
+}
+
+.stars.rating-2:before {
+    content: "★★☆☆☆"; 
+}
+
+.stars.rating-3:before {
+    content: "★★★☆☆"; 
+}
+
+.stars.rating-4:before {
+    content: "★★★★☆";
+}
+
+.stars.rating-5:before {
+    content: "★★★★★"; 
+}
+.stock{
+    font-weight: bold;
+}
+.product-container.slide {
+    transform: translateX(calc(-100% * var(--active-index)));
+  }
+.price-container{
+    text-align: left;
+   display: flex;
+   justify-content: flex-start;
+   padding: 0.5em;
+}
+.prev-price{
+    color:#0088DD;
+    font-weight: bold;
+    font-size: large;
+    margin-inline-start: 1em;
+}
+.pres-price{
+    text-decoration: line-through;
+    margin-inline-start: 1em;
+    font-size: small;
+    color: rgb(149, 149, 149);
+    margin-top: 0.2em;
+}
+
+  

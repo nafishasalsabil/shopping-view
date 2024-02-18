@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "heading":"Free Shipping",
+        "description":"Minimum order $90",
+        "imgUrl":"fast-delivery.png"
+    },{
+        "id":2,
+        "heading":"24/7 Support",
+        "description":"Contact us 24 hours",
+        "imgUrl":"call.png"
+    },{
+        "id":3,
+        "heading":"Best Prices & Offers",
+        "description":"Order $100 or more",
+        "imgUrl":"offer.png"
+    },{
+        "id":4,
+        "heading":"Easy Returns",
+        "description":"Within 30 days",
+        "imgUrl":"exchange.png"
+    }
+]

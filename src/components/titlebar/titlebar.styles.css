@@ -43,7 +43,7 @@
 .badge {
      width: 15px;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 11px;
     right: 165px;
     background-color: #0088DD;
