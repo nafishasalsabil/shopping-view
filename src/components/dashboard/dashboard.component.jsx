@@ -22,7 +22,7 @@ const Dashboard = ({ cat }) => {
           <button className="buy">Buy Now</button>
         </div>
         <div className="right-image">
-          <img className="girl" src="../../../picture.png" alt="girl"></img>
+          <img className="girl" src="../../../images/picture.png" alt="girl"></img>
         </div>
       </div>
     </div>

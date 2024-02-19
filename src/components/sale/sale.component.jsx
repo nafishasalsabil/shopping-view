@@ -1,6 +1,6 @@
 import "./sale.styles.css";
 
-const Sale = () => {
+const Sale = ({sale}) => {
   return (
     <div className="sale-parent">
     <div className="prod1">
@@ -8,13 +8,13 @@ const Sale = () => {
             <span>Gadget Store</span>
             <h3 className="sale-percent">30% Sale</h3>
             <div className="buy-class">
-            <img className='buy-img' src='../../../buy.png' alt='buy'></img>
+            <img className='buy-img' src='../../../images/buy.png' alt='buy'></img>
             <span className="buy-text">
            Buy Now</span>
             </div>
         </div>
         <div className="pic">
-        <img className='prod-img' src='../../../ap2.png' alt='logo'></img>
+        <img className='prod-img-sale' src='../../../images/ap2.png' alt='logo'></img>
         </div>
     </div>
       <div className="prod2">
@@ -28,7 +28,7 @@ const Sale = () => {
            
         </div>
         <div className="pic">
-        <img className='prod-img' src='../../../prod2.png' alt='logo'></img>
+        <img className='prod-img-sale' src='../../../images/prod2.png' alt='logo'></img>
         </div>
       </div>
       <div className="prod3">
@@ -36,13 +36,13 @@ const Sale = () => {
             <span>Valentine's offer</span>
             <h3 className="sale-percent">30% Sale</h3>
             <div className="buy-class">
-            <img className='buy-img' src='../../../buy.png' alt='buy'></img>
+            <img className='buy-img' src='../../../images/buy.png' alt='buy'></img>
             <span className="buy-text">
            Buy Now</span>
             </div>
         </div>
         <div className="pic">
-        <img className='prod-img' src='../../../prod3.png' alt='logo'></img>
+        <img className='prod-img-sale' src='../../../images/prod3.png' alt='logo'></img>
         </div>
       </div>
       <div className="prod4">
@@ -50,13 +50,13 @@ const Sale = () => {
             <span>Relax Chair</span>
             <h3 className="sale-percent">New Arrival</h3>
             <div className="buy-class">
-            <img className='buy-img' src='../../../buy.png' alt='buy'></img>
+            <img className='buy-img' src='../../../images/buy.png' alt='buy'></img>
             <span className="buy-text">
            Buy Now</span>
             </div>
         </div>
         <div className="pic">
-        <img className='prod-img' src='../../../prod4.png' alt='logo'></img>
+        <img className='prod-img-sale' src='../../../images/prod4.png' alt='logo'></img>
         </div>
       </div>
       

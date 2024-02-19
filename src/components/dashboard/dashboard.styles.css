@@ -7,6 +7,7 @@
     border: 1px solid rgb(243, 243, 243);
     border-radius: 4px;
     margin-right: 1em;
+    max-width: 100%;
 }
 .cat-item{
     text-align: left;
@@ -30,9 +31,9 @@
 .right-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%; 
     text-align: left;
+    justify-content: center;
 }
 .tf{
     margin-bottom: 0;
@@ -46,7 +47,7 @@
 }
 .disc{
     margin-bottom:0 ;
-    font-size: large;
+    font-size: 1.5vw;
     font-weight: 600;
 }
 .buy{
@@ -63,6 +64,15 @@
 .highlight {
     color: #0088DD;
 }
+.right-image {
+    max-width: 100%;
+}
+
+.girl {
+    max-width: 100%;
+    height: auto;
+}
+
 
  /* .arrow-icon {
     width: 10px; 
@@ -72,3 +82,33 @@
     background-repeat: no-repeat;
     background-position: right center;
 }  */
+@media screen and (min-width: 768px) {
+    .left-side {
+        width: 25%; /* Restore width for larger screens */
+    }
+
+    .right-side {
+        width: 100%; /* Adjust width for larger screens */
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .left-side {
+       display: none;
+    }
+
+  .right-side{
+    flex-direction: column-reverse;
+    object-fit: contain;
+    padding: 0;
+  }
+  .right-text{
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+  }
+  .buy{
+    font-size: small;
+    width: auto;
+  }
+}
