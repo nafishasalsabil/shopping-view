@@ -3,7 +3,7 @@ import "./titlebar.styles.css";
 const Titlebar = () => {
   return (
     <nav className="navbar">
-      <div className="left-section">
+      <div className="left-section-title">
         <div className="logo">
           <img
             className="logoimg"

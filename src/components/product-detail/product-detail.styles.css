@@ -3,23 +3,38 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 5%;
+    margin-top: 10%;
+    padding: 1em;
 }
 .left-cont-prod{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    object-fit: contain;
+    overflow: hidden;
+}
+.image-container-prod-det{
+  position: relative;
+  height:50vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .right-cont-prod{
-    padding: 2em;
     text-align: left;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 50%;
+}
+.right-cont-details{
+  padding: 2em;
+  width: 60%;
 }
 .quantity-count{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
 }
 .quan-but{
    width: 10%;
@@ -60,6 +75,8 @@
   
   .prod-detail-img {
     max-width: 100%;
+  max-height: 100%;
+  height: auto;
   }
   
   .prev-arrow,
@@ -68,10 +85,11 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
-    color: #0088DD;
+    color: black;
     border: none;
+    border-radius: 4px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -86,7 +104,63 @@
   
   .prev-arrow:hover,
   .next-arrow:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(228, 228, 228);
   }
-  
-  
+  .qs-text-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  .h5-qt{
+    margin: 0;
+    font-size: large;
+  }
+  .rating-stock-qt{
+    display: block;
+    margin-bottom: 1em;
+  }
+  .prev-price-txt {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.price-container-qt{
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+}
+@media screen and (max-width:769px) {
+  .cart-btn{
+    padding: 0.6em;
+  }
+  .h5-qt{
+    font-size: small;
+  }
+  .stock-qt{
+    font-weight: bold;
+    font-size: small;
+  }
+  .quan-p{
+    font-size: medium;
+  }
+}
+@media screen and (max-width:600px) {
+  .prod-detail-parent{
+    flex-direction: column;
+    padding: 0;;
+  }
+  .image-container-prod-det{
+    height: 100%;
+  }
+  .left-cont-prod{
+    width: 100%;
+  }
+  .right-cont-prod{
+    width: 100%;
+  }
+  .right-cont-details{
+    width: 100%;
+  }
+}

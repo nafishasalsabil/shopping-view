@@ -124,4 +124,8 @@
       font-size: small; /* Decrease font size of items */
     }
   }
-  
+  @media(max-width:1028px){
+    .dropdown1{
+        display: none;
+    }
+  }

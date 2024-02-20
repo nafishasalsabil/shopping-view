@@ -172,7 +172,7 @@ nav {
 
     .dropdown-content {
         position: static; 
-        display: none; 
+        display: none;
     }
 
     .dropdown.open .dropdown-content {
@@ -200,6 +200,9 @@ nav {
     .items {
       border-bottom: 1px solid #f1f1f1;
       margin-inline-end: 1.5rem;
+    }
+    .dropdown-content{
+        height: 12vw; 
     }
   }
   .link-to-anything{

@@ -42,7 +42,8 @@ const Navbar = ({ cats, data }) => {
                   return uniqueCategories;
                 }, [])
                 .map((category, index) => (
-                  <li key={index}>{category}</li>
+                  <li key={index}>
+                  <Link className="link-to-anything" to={`/categories/${encodeURIComponent(JSON.stringify(category))}`}>{category}</Link></li>
                 ))}
             </ul>
           </li>

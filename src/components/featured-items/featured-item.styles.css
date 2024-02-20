@@ -140,7 +140,7 @@
 }
 
 .each-product {
-    width: 24%;
+    width: 98%;
     box-sizing: border-box;
     padding: 10px;
     display: flex;
@@ -233,6 +233,11 @@
     color: rgb(149, 149, 149);
     margin-top: 0.2em;
 }
+.link-to-anything-feat{
+    width: 24%;
+    text-decoration: none;
+    color: black;
+}
 @media screen and (max-width:1025px) {
   .left-options{
     width: 30%;
@@ -243,9 +248,13 @@
   .product-container{
     flex-wrap: wrap;
   }
-  .each-product{
+  .link-to-anything-feat{
     width: 48%;
+  }
+  .each-product{
+    width: 98%;
     margin-bottom: 0.5em;
+   
   }
 }
 @media screen and (max-width:769px) {
@@ -259,11 +268,14 @@
         justify-content: center;
     }
 }
-@media screen and (max-width:769px) {
+@media screen and (max-width:500px) {
     .right-features{
         margin-left: 0;
     }
     .each-product{
+        width: 98%;
+    }
+    .link-to-anything-feat{
         width: 100%;
     }
 }

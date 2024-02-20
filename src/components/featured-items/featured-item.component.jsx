@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./featured-item.styles.css";
+import { Link } from "react-router-dom";
 
 const FeaturedItems = ({ policies, data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -55,11 +56,13 @@ const FeaturedItems = ({ policies, data }) => {
             <i className="arrowx right" onClick={handleNext}></i>
           </div>
         </div>
+        
         <div className="product-container">
           {visibleProducts.map((item, index) => {
             const presentPrice =
               item.price - item.price * (item.discountPercentage / 100);
             return (
+              <Link className="link-to-anything-feat" to={`/products/${encodeURIComponent(JSON.stringify(item))}`}>
               <div key={index} className="each-product">
                 <div className="img-cont">
                   <span
@@ -121,6 +124,7 @@ const FeaturedItems = ({ policies, data }) => {
                   </span>
                 </div>
               </div>
+              </Link>
             );
           })}
         </div>
