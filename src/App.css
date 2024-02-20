@@ -14,19 +14,20 @@
   width: 100%;
 }
 
-.Navbar{
+.Navbar {
   position: absolute;
   top: 50px;
   left: 0;
 }
-.dashboard{
+
+.dashboard {
   padding-left: 2rem;
-  padding-right:2rem;
-}
-@media screen and (max-width: 426px) {
-  .dashboard{
-    padding-left: 1rem;
-    padding-right:1rem;
-  }
+  padding-right: 2rem;
 }
 
+@media screen and (max-width: 426px) {
+  .dashboard {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

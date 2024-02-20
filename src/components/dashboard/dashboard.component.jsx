@@ -14,7 +14,9 @@ const Dashboard = ({ cat }) => {
       </div>
       <div className="right-side">
         <div className="right-text">
-          <p className="disc">Upto <span className="highlight">70%</span> off on Black Friday</p>
+          <p className="disc">
+            Upto <span className="highlight">70%</span> off on Black Friday
+          </p>
           <h1 className="tf">
             TRENDY <span className="highlight">FASHION</span>
           </h1>
@@ -22,7 +24,11 @@ const Dashboard = ({ cat }) => {
           <button className="buy">Buy Now</button>
         </div>
         <div className="right-image">
-          <img className="girl" src="../../../images/picture.png" alt="girl"></img>
+          <img
+            className="girl"
+            src="../../../images/picture.png"
+            alt="girl"
+          ></img>
         </div>
       </div>
     </div>

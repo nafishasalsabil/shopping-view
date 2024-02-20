@@ -136,7 +136,7 @@
     margin-top: 1em;
     transform: translateX(calc(-100% * var(--active-index)));
     transition: transform 0.5s ease;
-  
+
 }
 
 .each-product {
@@ -158,8 +158,8 @@
     max-width: 100%;
     width: 18vh;
     height: 200px;
-    object-fit:contain;
-    
+    object-fit: contain;
+
 }
 
 
@@ -233,49 +233,61 @@
     color: rgb(149, 149, 149);
     margin-top: 0.2em;
 }
-.link-to-anything-feat{
+
+.link-to-anything-feat {
     width: 24%;
     text-decoration: none;
     color: black;
 }
+
 @media screen and (max-width:1025px) {
-  .left-options{
-    width: 30%;
-  }
-  .right-features{
-    width: 100%;
-  }
-  .product-container{
-    flex-wrap: wrap;
-  }
-  .link-to-anything-feat{
-    width: 48%;
-  }
-  .each-product{
-    width: 98%;
-    margin-bottom: 0.5em;
-   
-  }
-}
-@media screen and (max-width:769px) {
-    .feature-container{
-        flex-direction: column;
+    .left-options {
+        width: 30%;
     }
-    .left-options{
+
+    .right-features {
         width: 100%;
     }
-    .policy{
+
+    .product-container {
+        flex-wrap: wrap;
+    }
+
+    .link-to-anything-feat {
+        width: 48%;
+    }
+
+    .each-product {
+        width: 98%;
+        margin-bottom: 0.5em;
+
+    }
+}
+
+@media screen and (max-width:769px) {
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .left-options {
+        width: 100%;
+    }
+
+    .policy {
         justify-content: center;
     }
 }
+
 @media screen and (max-width:500px) {
-    .right-features{
+    .right-features {
         margin-left: 0;
     }
-    .each-product{
+
+    .each-product {
         width: 98%;
     }
-    .link-to-anything-feat{
+
+    .link-to-anything-feat {
         width: 100%;
     }
 }
