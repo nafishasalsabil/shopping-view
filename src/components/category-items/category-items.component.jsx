@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./category-items.styles.css";
 import { useParams, Link} from "react-router-dom";
 
