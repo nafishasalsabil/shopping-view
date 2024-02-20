@@ -46,7 +46,7 @@ const App = () => {
     <div className="App">
       <Router>
         <Titlebar />
-        <Navbar cats={cat} data={data} />
+        <Navbar  data={data} />
         <Routes>
           <Route
             exact

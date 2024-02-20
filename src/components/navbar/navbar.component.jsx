@@ -8,6 +8,15 @@ const Navbar = ({ cats, data }) => {
   const toggleMenu = () => {
     setMenuOpen((prevState) => !prevState);
   };
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsOpen(false);
+  };
 
   return (
     <nav>
@@ -24,7 +33,7 @@ const Navbar = ({ cats, data }) => {
             <div className="dropdown-arrow"></div>
             <ul className="dropdown-content">
               {data.products?.map((item, index) => (
-                <li key={index}>
+                <li key={index} onClick={toggleMenu}>
                 <Link className="link-to-anything" to={`/products/${encodeURIComponent(JSON.stringify(item))}`}>{item.title}</Link>
                 </li>
               ))}
@@ -42,7 +51,7 @@ const Navbar = ({ cats, data }) => {
                   return uniqueCategories;
                 }, [])
                 .map((category, index) => (
-                  <li key={index}>
+                  <li key={index} onClick={toggleMenu}>
                   <Link className="link-to-anything" to={`/categories/${encodeURIComponent(JSON.stringify(category))}`}>{category}</Link></li>
                 ))}
             </ul>
